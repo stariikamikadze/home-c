@@ -5,14 +5,12 @@ int main(int argc, char **argv)
 	
 /*
 Let's
-	 Go
-		To
-		   Walk
+  go
+    to walk
 */
 	printf("Let's\n");
-	printf("	 Go\n");
-	printf("		To\n");
-	printf("		   Walk\n");
+	printf("  go\n");
+	printf("    to walk\n");
 		return 0; 
 
 }
