@@ -1,0 +1,11 @@
+int main()
+{
+    int a= 1, n=1; //, sqrt, cube;
+    //a = 1; 
+    scanf ("%d",n);
+    while (a<=n){
+    printf("%d Hello World\n", a);
+    a--;
+    }
+    return 0;
+}
