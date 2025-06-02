@@ -12,15 +12,14 @@ int main ()
 	int duplicates = 0;
 	
 	while (num > 0) { 
-	    int current_digit = num % 10;  
-	    if (current_digit == prev_digit){
-	        duplicates = 1;
-	        break;
-	    } 
-	    prev_digit = current_digit;
-	    num /= 10;  
+		int current_digit = num % 10;  
+		if (current_digit == prev_digit){
+			duplicates = 1;
+			break;
+		} 
+		prev_digit = current_digit;
+		num /= 10;  
 	}
-	
 	printf ("%s", duplicates ? "YES" : "NO"); 
 	return 0;
 }
