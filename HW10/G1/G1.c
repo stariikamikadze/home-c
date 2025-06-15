@@ -24,7 +24,7 @@ int main() {
     int length = strlen(str);
     
     
-    fprintf(output, "%s, %s, %s, %d", str, str, str, length);
+    fprintf(output, "%s, %s, %s %d", str, str, str, length);
     
     fclose(input);
     fclose(output);
