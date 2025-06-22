@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX_ENTRIES 100  // Максимальное количество записей
+
+// Структура для хранения даты, времени и температуры
+typedef struct {
+    int year;       // Год (4 цифры)
+    int month;      // Месяц (2 цифры)
+    int day;        // День (2 цифры)
+    int hour;       // Час (2 цифры)
+    int minute;     // Минуты (2 цифры)
+    int temperature; // Температура (-99..99)
+} TemperatureRecord;
+
+int main() {
+    TemperatureRecord records[MAX_ENTRIES]; // Массив структур
+    int count = 0; // Счетчик записей
+
+    // Пример добавления записи
+    records[count].year = 2023;
+    records[count].month = 12;
+    records[count].day = 15;
+    records[count].hour = 14;
+    records[count].minute = 30;
+    records[count].temperature = -5;
+    count++;
+
+    // Добавим еще одну запись
+    records[count].year = 2023;
+    records[count].month = 12;
+    records[count].day = 15;
+    records[count].hour = 15;
+    records[count].minute = 45;
+    records[count].temperature = -3;
+    count++;
+
+    // Вывод всех записей
+    printf("Все записи о температуре:\n");
+    for (int i = 0; i < count; i++) {
+        printf("%04d-%02d-%02d %02d:%02d: %d°C\n", 
+               records[i].year, records[i].month, records[i].day,
+               records[i].hour, records[i].minute, records[i].temperature);
+    }
+
+    return 0;
+}
