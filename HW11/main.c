@@ -1,5 +1,5 @@
 #include "temp_api.h"
-#include <stdio.h>
+
 
 int main() {
     TemperatureRecord db[MAX_RECORDS];

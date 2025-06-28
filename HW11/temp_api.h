@@ -1,9 +1,11 @@
+#include <stdio.h>
 
 #ifndef TEMP_API_H
 #define TEMP_API_H
 
 #define MAX_RECORDS 1000
 #define MONTHS  12
+#define WEEKS 52
 
 typedef struct {   //структура для входящей записи 
 	int year;
